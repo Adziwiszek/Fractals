@@ -22,7 +22,7 @@ set(HEADERS
 
 add_executable(main ${SOURCES} ${HEADERS})
 target_link_libraries(main PRIVATE sfml-graphics sfml-window sfml-system sfml-network)
-target_compile_features(main PRIVATE cxx_std_17)
+target_compile_features(main PRIVATE cxx_std_23)
 
 if(WIN32)
     add_custom_command(
